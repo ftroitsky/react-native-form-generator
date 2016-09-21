@@ -30,6 +30,8 @@ export class LinkComponent extends React.Component{
           : null
         }
         <Text
+          numberOfLines={1}
+          ellipsizeMode={this.props.ellipsizeMode ? this.props.ellipsizeMode : 'tail'}
           style={this.props.labelStyle}>
             {this.props.label}
         </Text>
